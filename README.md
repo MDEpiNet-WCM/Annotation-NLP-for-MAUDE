@@ -7,7 +7,7 @@ https://doi.org/10.1002/pds.5402
 
 ## Introduction
 We have shown that investigators can create an annotation model to implement natural language processing to analyze device adverse event report. We share with the community resources for the creation of such an annotation model and the implementation of customized named entity recognition (NER). See the link above for the full publication. The following resources are shared on this site
-  - Examples of annotated texts
+  - Examples of annotated texts (xml format, can use MAE to open)
   - Codes for the implementation of NER
   
 ## Contact information
