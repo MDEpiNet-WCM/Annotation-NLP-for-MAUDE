@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<MAUDE>
+<TEXT><![CDATA[1285984
+physician reports that pt has complained of pain since micro-insert placement. physician conducted diagnostic hysteroscopy and noted an "extended wire" protruding from right ostium. physician cut off the wire. pt's pain subsided. per the ifu: a very small percentage of women in the essure clinical trials reported recurrent or persistent pelvic pain, and only one woman requested device removal due to pain; however, if device removal is required for any reason, it will likely require surgery, including an abdominal incision and general anesthesia, and possible hysterectomy..]]></TEXT>
+<TAGS>
+<DEVICE id="DV0" spans="145~158" text="extended wire" type="Essure" />
+<DEVICE id="DV1" spans="212~216" text="wire" type="Essure" />
+<SOURCE id="SR0" spans="8~17" text="physician" type="physician" />
+<SYMPTOM id="SY0" spans="52~56" text="pain" type="pain" />
+<PROCEDURE id="PD0" spans="200~207" text="cut off" type="removal" />
+<COMPLICATION id="C0" spans="160~170" text="protruding" type="dislocation" />
+<LOCATION id="LC0" spans="176~188" text="right ostium" type="tube" />
+<LINKTAG id="L0" fromID="C0" fromText="protruding" toID="DV0" toText="extended wire" relationship="performed_with" />
+<LINKTAG id="L1" fromID="C0" fromText="protruding" toID="LC0" toText="right ostium" relationship="located_at" />
+<LINKTAG id="L2" fromID="PD0" fromText="cut off" toID="DV1" toText="wire" relationship="performed_with" />
+</TAGS>
+</MAUDE>
