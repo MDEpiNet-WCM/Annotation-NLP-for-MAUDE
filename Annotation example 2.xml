@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<MAUDE>
+<TEXT><![CDATA[2500809
+pt had the essure procedure (b)(6) 2012. pt presented with signs of allergy shortly after having persistent pruritus and urticaria for 5 weeks with minimal relief from antihistamines. physician removed devices (b)(6) 2012, with a bilateral partial salpingectomy. physician reported (b)(6) 2012, pt's symptoms have resolved overall, she still has occasional itching, but significant improvement. the essure ifu contains the following warning statement: the essure micro-insert includes nickel-titanium alloy, which is generally considered safe. however, in vitro testing has demonstrated that nickel is released from this device. pts who are allergic to nickel may have an allergic reaction to this device, especially those with a history of metal allergies. in addition, some pts may develop an allergy to nickel if this device is implanted. typical allergy symptoms reported for this device include rash, pruritus, and hives..]]></TEXT>
+<TAGS>
+<DEVICE id="DV0" spans="19~25" text="essure" type="Essure" />
+<DEVICE id="DV1" spans="210~217" text="devices" type="Essure" />
+<TIMING id="TI0" spans="43~47" text="2012" type="proctime" />
+<TIMING id="TI1" spans="225~229" text="2012" type="proctime" />
+<SYMPTOM id="SY0" spans="76~83" text="allergy" type="other" />
+<SYMPTOM id="SY1" spans="105~124" text="persistent pruritus" type="other" />
+<SYMPTOM id="SY2" spans="129~138" text="urticaria" type="other" />
+<PROCEDURE id="PD0" spans="26~35" text="procedure" type="implant" />
+<PROCEDURE id="PD1" spans="202~209" text="removed" type="removal" />
+<PROCEDURE id="PD2" spans="238~269" text="bilateral partial salpingectomy" type="salpingectomy" />
+<LINKTAG id="L0" fromID="PD0" fromText="procedure" toID="DV0" toText="essure" relationship="performed_with" />
+<LINKTAG id="L1" fromID="PD0" fromText="procedure" toID="TI0" toText="2012" relationship="event_time" />
+<LINKTAG id="L2" fromID="PD1" fromText="removed" toID="DV1" toText="devices" relationship="performed_with" />
+<LINKTAG id="L3" fromID="PD1" fromText="removed" toID="TI1" toText="2012" relationship="event_time" />
+</TAGS>
+</MAUDE>

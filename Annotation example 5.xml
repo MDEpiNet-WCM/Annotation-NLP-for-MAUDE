@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<MAUDE>
+<TEXT><![CDATA[6762962
+this prospective pregnancy case was reported by a lawyer and describes the occurrence of device dislocation ("migration of essure device") and pregnancy with contraceptive device ("post-implant pregnancy") in a female patient who had essure inserted for female sterilization. the occurrence of additional non-serious events is detailed below. other product or product use issues identified: device ineffective "post-implant pregnancy". on (b)(6) 2008, the patient had essure inserted. on an unknown date, the patient experienced device dislocation (seriousness criteria medically significant and intervention required), pregnancy with contraceptive device (seriousness criterion medically significant), pelvic pain ("pelvic pain") and menorrhagia ("heavy menses"). last menstrual period and estimated date of delivery were not provided. the patient had essure in place during the first trimester of pregnancy. the patient was treated with surgery (underwent removal of the essure device by bilateral salpingectomy). essure was removed. at the time of the report, the device dislocation, pregnancy with contraceptive device, pelvic pain and menorrhagia outcome was unknown. the reporter considered device dislocation, menorrhagia, pelvic pain and pregnancy with contraceptive device to be related to essure. incident. no lot number or sample available for investigation. there is no evidence that a device related defect or malfunction caused a death or serious injury. if additional information becomes available it will be provided on a supplemental report..]]></TEXT>
+<TAGS>
+<DEVICE id="DV0" spans="97~103" text="device" type="Essure" />
+<DEVICE id="DV1" spans="131~144" text="essure device" type="Essure" />
+<DEVICE id="DV2" spans="476~482" text="essure" type="Essure" />
+<DEVICE id="DV3" spans="537~543" text="device" type="Essure" />
+<DEVICE id="DV4" spans="981~994" text="essure device" type="Essure" />
+<DEVICE id="DV5" spans="1024~1030" text="essure" type="Essure" />
+<SOURCE id="SR0" spans="58~64" text="lawyer" type="lawyer" />
+<TIMING id="TI0" spans="454~458" text="2008" type="proctime" />
+<SYMPTOM id="SY0" spans="151~160" text="pregnancy" type="pregnancy" />
+<SYMPTOM id="SY1" spans="628~637" text="pregnancy" type="pregnancy" />
+<SYMPTOM id="SY2" spans="711~722" text="pelvic pain" type="pain" />
+<SYMPTOM id="SY3" spans="743~754" text="menorrhagia" type="menstrual" />
+<SYMPTOM id="SY4" spans="757~769" text="heavy menses" type="menstrual" />
+<PROCEDURE id="PD0" spans="483~491" text="inserted" type="implant" />
+<PROCEDURE id="PD1" spans="966~973" text="removal" type="removal" />
+<PROCEDURE id="PD2" spans="998~1021" text="bilateral salpingectomy" type="salpingectomy" />
+<PROCEDURE id="PD3" spans="1035~1042" text="removed" type="removal" />
+<COMPLICATION id="C0" spans="104~115" text="dislocation" type="dislocation" />
+<COMPLICATION id="C1" spans="118~127" text="migration" type="dislocation" />
+<COMPLICATION id="C2" spans="544~555" text="dislocation" type="dislocation" />
+<LINKTAG id="L0" fromID="C0" fromText="dislocation" toID="DV0" toText="device" relationship="performed_with" />
+<LINKTAG id="L1" fromID="C1" fromText="migration" toID="DV1" toText="essure device" relationship="performed_with" />
+<LINKTAG id="L2" fromID="PD0" fromText="inserted" toID="DV2" toText="essure" relationship="performed_with" />
+<LINKTAG id="L3" fromID="PD0" fromText="inserted" toID="TI0" toText="2008" relationship="event_time" />
+<LINKTAG id="L4" fromID="C2" fromText="dislocation" toID="DV3" toText="device" relationship="performed_with" />
+<LINKTAG id="L5" fromID="PD1" fromText="removal" toID="DV4" toText="essure device" relationship="performed_with" />
+<LINKTAG id="L6" fromID="PD3" fromText="removed" toID="DV5" toText="essure" relationship="performed_with" />
+</TAGS>
+</MAUDE>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<MAUDE>
+<TEXT><![CDATA[3597214
+a consumer reported having essure (fallopian tube occlusion insert) inserted. since then, she had pain where implanted, cramping (intensity of 7-8 on a scale of 1-10), back pain and headaches. she has seen her gynecologist and 2 different ones for a second and third option. since getting essure inserted, she experienced nothing but stabbing pain in her left side and cramping every day. she reported that she just wanted to have it removed, but has also reported that essure was removed on (b)(6) 2013. follow-up information received on 17-feb-2016 (legal claim): case considered legal case now. essure was inserted on (b)(6) 2012 for permanent contraception. the consumer experienced pelvic pain, weight gain, heavy bleeding, blood clots, painful intercourse, hair loss and depression. on (b)(6) 2013, she underwent a hysterectomy to get essure removed. follow up 24-feb-2016: no new information was provided. company causality comment: this spontaneous case report refers to a female consumer/plaintiff who had essure (fallopian tube occlusion insert) inserted and developed stabbing pain in her left side /pelvic pain/pain where implanted, cramping, back pain, heavy bleeding / blood clots (regarded as genital bleeding) and headaches. she was submitted to a hysterectomy with essure removal (approximately 1 year after device placement). these events are listed according to essure's reference safety information. during essure micro-insert therapy, abdominal, back, pelvic pain, headaches and genital bleeding or spotting may occur. in this particular case, limited information was provided. however, considering events nature and in the lack of an alternative explanation; causality with the suspect insert cannot be excluded. non-serious events were also reported. this case was considered an incident, since device removal was required (hysterectomy performed). a product technical analysis is being performed. further information will be obtained through the litigation process. ]]></TEXT>
+<TAGS>
+<DEVICE id="DV0" spans="478~484" text="essure" type="Essure" />
+<DEVICE id="DV1" spans="606~612" text="essure" type="Essure" />
+<DEVICE id="DV2" spans="849~855" text="essure" type="Essure" />
+<SOURCE id="SR0" spans="10~18" text="consumer" type="consumer" />
+<TIMING id="TI0" spans="507~511" text="2013" type="proctime" />
+<TIMING id="TI1" spans="636~640" text="2012" type="proctime" />
+<TIMING id="TI2" spans="807~811" text="2013" type="proctime" />
+<PROCESS id="PS0" spans="590~600" text="legal case" type="legal" />
+<PROCESS id="PS1" spans="1978~1988" text="litigation" type="legal" />
+<PROCESS id="PS2" spans="560~571" text="legal claim" type="legal" />
+<SYMPTOM id="SY0" spans="106~126" text="pain where implanted" type="pain" />
+<SYMPTOM id="SY1" spans="128~136" text="cramping" type="pain" />
+<SYMPTOM id="SY2" spans="176~185" text="back pain" type="pain" />
+<SYMPTOM id="SY3" spans="190~199" text="headaches" type="other" />
+<SYMPTOM id="SY4" spans="342~372" text="stabbing pain in her left side" type="pain" />
+<SYMPTOM id="SY5" spans="377~385" text="cramping" type="pain" />
+<SYMPTOM id="SY6" spans="695~706" text="pelvic pain" type="pain" />
+<SYMPTOM id="SY7" spans="708~719" text="weight gain" type="other" />
+<SYMPTOM id="SY8" spans="721~735" text="heavy bleeding" type="bleeding" />
+<SYMPTOM id="SY9" spans="737~748" text="blood clots" type="menstrual" />
+<SYMPTOM id="SY10" spans="750~769" text="painful intercourse" type="pain" />
+<SYMPTOM id="SY11" spans="771~780" text="hair loss" type="other" />
+<SYMPTOM id="SY12" spans="785~795" text="depression" type="other" />
+<PROCEDURE id="PD0" spans="489~496" text="removed" type="removal" />
+<PROCEDURE id="PD1" spans="617~625" text="inserted" type="implant" />
+<PROCEDURE id="PD2" spans="829~841" text="hysterectomy" type="hysterectomy" />
+<PROCEDURE id="PD3" spans="856~863" text="removed" type="removal" />
+<LINKTAG id="L0" fromID="PD0" fromText="removed" toID="TI0" toText="2013" relationship="event_time" />
+<LINKTAG id="L1" fromID="PD0" fromText="removed" toID="DV0" toText="essure" relationship="performed_with" />
+<LINKTAG id="L2" fromID="PD1" fromText="inserted" toID="DV1" toText="essure" relationship="performed_with" />
+<LINKTAG id="L3" fromID="PD1" fromText="inserted" toID="TI1" toText="2012" relationship="event_time" />
+<LINKTAG id="L4" fromID="PD3" fromText="removed" toID="TI2" toText="2013" relationship="event_time" />
+<LINKTAG id="L5" fromID="PD3" fromText="removed" toID="DV2" toText="essure" relationship="performed_with" />
+</TAGS>
+</MAUDE>
