@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Python codes to read in annotation and implement NER
-
-# In[ ]:
+## Python codes to read in annotation and implement NER
 
 
 import glob
@@ -14,15 +12,12 @@ import en_core_web_sm
 from pathlib import Path
 
 
-# ## Read in annotated XML files
-
-# In[ ]:
-
+## Read in annotated XML files
 
 ## function to collect entities into training data
 def load_ent(datafile, filename):
     # read in xml file
-    tree = ET.parse('C:/Users/jim2012/Documents/Essure MAUDE/NLP full data/'+ datafile + '/' + filename)
+    tree = ET.parse('C:/Project data/'+ datafile + '/' + filename)
     root = tree.getroot()
 
     # passing on text
@@ -44,11 +39,8 @@ def load_ent(datafile, filename):
     return training_doc
 
 
-# In[ ]:
-
-
 # extract all training data
-train_filelist = glob.glob('C:/Train_annotate/*')
+train_filelist = glob.glob('C:/Project data/Train_annotate/*')
 
 filenames = []
 for filename in train_filelist:
@@ -61,7 +53,7 @@ for filename in filenames:
     TRAIN_ENT.extend(training_doc)
     
 # extract all testing data
-test_filelist = glob.glob('C:/Test_annotate/*')
+test_filelist = glob.glob('C:/Project data/Test_annotate/*')
 
 filenames = []
 for filename in test_filelist:
@@ -74,10 +66,7 @@ for filename in filenames:
     TEST_ENT.extend(testing_doc)
 
 
-# ## Model training
-
-# In[ ]:
-
+## Model training
 
 # set seed
 random.seed(123)
@@ -128,18 +117,12 @@ with nlp.disable_pipes(*other_pipes):
         print(losses)
 
 
-# In[ ]:
-
-
 # save model to output directory
-output_dir = Path('C:/nlp_model')
+output_dir = Path('C:/Project data/nlp_model')
 nlp.to_disk(output_dir)
 
 
-# ## Assessing NLP performance
-
-# In[ ]:
-
+## Assessing NLP performance
 
 ### Exact definition
 ## define function to assess precision and recall
@@ -184,17 +167,10 @@ def ner_eval(ner_model, examples, ent_type):
     return({'precision': precision, 'recall': recall, 'fscore': fscore})
 
 
-# In[ ]:
-
-
 # precision and recall on testing data
-for ent_type in ['ALL', 'DESIRE',                  'SOURCE', 'TIMING', 'PROCESS', 'SYMPTOM', 'PROCEDURE', 'COMPLICATION', 'DEVICE', 'LOCATION', 'CERTAINTY']:
+for ent_type in ['ALL', 'DESIRE', 'SOURCE', 'TIMING', 'PROCESS', 'SYMPTOM', 'PROCEDURE', 'COMPLICATION', 'DEVICE', 'LOCATION', 'CERTAINTY']:
     test_eva = ner_eval(nlp, TEST_ENT, ent_type)
     print(ent_type, "labels: ", test_eva)
-
-
-# In[ ]:
-
 
 ### Lenient defintion: allow overlap
 ## define function to assess precision and recall
@@ -248,12 +224,8 @@ def ner_eval_lenient(ner_model, examples, ent_type):
     
     return({'precision': precision, 'recall': recall, 'fscore': fscore})
 
-
-# In[ ]:
-
-
 # precision and recall on testing data
-for ent_type in ['ALL', 'DESIRE',                  'SOURCE', 'TIMING', 'PROCESS', 'SYMPTOM', 'PROCEDURE', 'COMPLICATION', 'DEVICE', 'LOCATION', 'CERTAINTY']:
+for ent_type in ['ALL', 'DESIRE', 'SOURCE', 'TIMING', 'PROCESS', 'SYMPTOM', 'PROCEDURE', 'COMPLICATION', 'DEVICE', 'LOCATION', 'CERTAINTY']:
     test_eva = ner_eval_lenient(nlp, TEST_ENT, ent_type)
     print(ent_type, "labels: ", test_eva)
 
